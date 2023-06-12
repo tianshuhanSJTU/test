@@ -1,0 +1,60 @@
+[INFO] Outband TCP Connecting...
+[INFO] waiting on port 19875 for TCP connection 
+[INFO] TCP connection with rmeote process was established
+[INFO] ScaleClient Starting...
+[INFO] INIT_RES
+[TRACE] SRC: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0b | LID = 0 
+[TRACE] DST: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0e | LID = 0 
+[INFO] CREATE_RES
+[INFO] REG_MR
+[TRACE] mmap succeed in reg mr.
+[TRACE] client_addr: 0x9ad000, mmaped_addr: 0x9ad000
+[TRACE] lkey | rkey: 2639360 | 2639360
+[TRACE] ------------------[local_mem]------------------
+[TRACE] client_addr = 0x9ad000, router_addr = 0x7fd3d4d4d000, size = 4096
+[TRACE] lkey = 2639360,  rkey = 2639360
+[TRACE] ------------------[local_mem]------------------
+[INFO] SETUP_CONN
+[TRACE] new conn pointer: 0x9ae2e0 update conn_map success
+[TRACE] setup conn resources success!
+[TRACE] Create vcq_shm_map: qp_index=0 vq_index=0
+[TRACE] Succeed to mount shm ctrlshm-cp-0-0
+[TRACE] Create vqp_shm_map: qp_index=0 vq_index=0
+[TRACE] Succeed to mount shm ctrlshm-qp-0-0
+[TRACE] setup ctrl shm comm success!
+[TRACE] ------------------------------[conn_id]------------------------------
+[TRACE] process_id: 603335
+[TRACE] SRC: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0b | QPN = 5249 
+[TRACE] DST: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0e | QPN = 5340 
+[TRACE] ------------------------------[conn_id]------------------------------
+[TRACE] ------------------------------[conn_idx]------------------------------
+[TRACE] process_id: 603335
+[TRACE] QP index = 0, VQ index = 0
+[TRACE] ------------------------------[conn_idx]------------------------------
+[INFO] POST_RECV
+[TRACE] Request by SHM: qp_indx=0, vq_index=0, process_id=603335
+[TRACE] sync temp_char: T
+[INFO] POLL_CQ
+[TRACE] completion was found in CQ with wr_id: 603335
+post send takes 4236.52 usec 
+[TRACE] [server] RECV message is: 'SEND operation      '
+[TRACE] sync temp_char: R
+[TRACE] sync temp_char: W
+[TRACE] [server] WRITE Contents of server buffer: 'RDMA write operation'
+[TRACE] Success close shm_fd: 3
+[TRACE] munmap client_addr success
+[TRACE] free client_addr
+[TRACE] ------------------[local_mem]------------------
+[TRACE] client_addr = 0, router_addr = 0, size = 0
+[TRACE] lkey = 0,  rkey = 0
+[TRACE] ------------------[local_mem]------------------
+[TRACE] munmap cq shm map success!
+[TRACE] munmap qp shm map success!
+[TRACE] release ctrl shm comm success!
+[TRACE] delete conn_res from host_map with qp_index: 0
+[TRACE] release conn resources success!
+[TRACE] ------------------------------[conn_id]------------------------------
+[TRACE] process_id: 603335
+[TRACE] SRC: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0b | QPN = 0 
+[TRACE] DST: GID =00:00:00:00:00:00:00:00:00:00:ff:ff:c0:a8:04:0e | QPN = 0 
+[TRACE] ------------------------------[conn_id]------------------------------
